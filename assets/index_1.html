@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script>
+$(document).ready(function() {
+
+  $(".btn-slide").click(function() {
+    $("#panel").animate({
+      width: 'toggle'
+    });
+    $(this).toggleClass("active");
+    return false;
+  });
+
+
+});
+</script>
+<style>
+body,h1 {font-family: "helvetica", sans-serif}
+img {margin-bottom: -10px;; 
+padding: 10px;}
+.w3-row-padding img {margin-bottom: 12px;
+padding: 10px;}
+
+#page_wrap {
+  width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  
+}
+
+#upper_left {
+    z-index: 100;
+  position: fixed;
+  top: 0; left: 0;
+  
+}
+
+#upper_right {
+
+  position: fixed;
+  top: 0;
+  right: 0%;
+
+}
+
+#lower_left {
+  
+  position: absolute;
+  bottom: 0%; left: 0;
+;
+}
+
+#lower_right {
+  bottom: 0%;
+  right: 0%;
+  position: fixed;
+}
+
+#primary_nav_wrap
+{
+  margin-top:15px
+
+}
+
+#primary_nav_wrap ul
+{
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+  margin-left:10px;
+}
+
+#primary_nav_wrap ul a
+{
+  display:block;
+  color:white;
+  background-color: black;
+  text-decoration:none;
+  font-size:12px;
+  line-height:24px;
+  padding:0 15px;
+  border:1px solid black;
+}
+
+#primary_nav_wrap ul li
+{
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+  background:black;
+}
+
+#primary_nav_wrap ul li:hover
+{
+  background:black;
+  color:black;
+}
+
+#primary_nav_wrap ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:black;
+  padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+  float:none;
+  width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+  line-height:120%;
+  padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+  top:0;
+  left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+  display:block;
+  background-color: white;
+  border:1px solid black;
+  color:black;
+}
+
+
+#panel {
+  font-size: 2rem;
+  line-height: 1;
+ background: #754c24; 
+    height: 700PX;
+    display: none;
+
+}
+.slide {
+    margin: 0;
+    padding: 0;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<!-- <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav> -->
+<div class="wrapper" style="display: block;">
+<div class="corners" id="upper_left"><a>Angelo Barbattini</a></div>
+
+
+
+
+<div class="btn-slide corners" id="upper_right">ABOUT</div>
+</div>
+
+<p id="panel">We are a fresh design studio based wherever you need us to be thanks to the www. We specialize in everything from print to screens and beyond. We are a group of former students of éc al who have united to form a collective/ agency to serve your needs.
+
+
+</p> 
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<!-- <div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>PHOTOLIO</b></h1>
+  <p><b>A template made by w3.css for photographers.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div> -->
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px;margin-top: 30px;">
+  <div class="w3-third">
+   
+   
+    <img src="./img/ab-portfolio (1).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (12).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (13).jpg" alt="fake as fuck" style="width:100%">
+     <img src="./img/typo/the-forty-five.jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (14).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (15).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (16).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (1).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (2).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (3).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (4).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (5).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (6).jpg" alt="fake as fuck" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="./img/typo/linea.jpg" alt="fake as fuck" style="width:100%">
+    
+    <img src="./img/ab-portfolio (11).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (21).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (27).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (22).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (21).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (17).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/typo/serif.jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (7).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (8).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (9).jpg" alt="fake as fuck" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="./img/typo/nyon-grotesk.jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/typo/saplatte-sans.jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (30).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (32).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (33).jpg" alt="fake as fuck" style="width:100%">
+     <img src="./img/typo/extract.jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (34).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (35).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (36).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio (37).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio-(1).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio-(20).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio-(21).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio-(22).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio-(23).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio-(24).jpg" alt="fake as fuck" style="width:100%">
+    <img src="./img/ab-portfolio-(25).jpg" alt="fake as fuck" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ <div class="corners" id="lower_right">CONTACT</div>
+ <div class="corners" id="lower_left" style="position: fixed;bottom: 0;right: 0;">CONTACT</div>
+<script type="text/javascript">Flickity.prototype._createResizeClass = function() {
+  this.element.classList.add('flickity-resize');
+};
+
+Flickity.createMethods.push('_createResizeClass');
+
+var resize = Flickity.prototype.resize;
+Flickity.prototype.resize = function() {
+  this.element.classList.remove('flickity-resize');
+  resize.call( this );
+  this.element.classList.add('flickity-resize');
+};
+</script>
+
+
+ <!-- script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+<script type="text/javascript">Flickity.prototype._createResizeClass = function() {
+  this.element.classList.add('flickity-resize');
+};
+
+Flickity.createMethods.push('_createResizeClass');
+
+var resize = Flickity.prototype.resize;
+Flickity.prototype.resize = function() {
+  this.element.classList.remove('flickity-resize');
+  resize.call( this );
+  this.element.classList.add('flickity-resize');
+};
+</script>
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script> -->
+
+</body>
+</html>
